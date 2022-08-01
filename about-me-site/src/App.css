@@ -1,0 +1,79 @@
+.pageWrap {
+  background-color: #f3f8fe;
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 40px);
+  max-width: 96%;
+  margin: 2%;
+ }
+ .title{
+  color: midnightblue;
+  display: inline-block;
+  font-size: xxx-large;
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+  vertical-align: top;
+ }
+ .faceIcon{
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+  object-fit: contain;
+  width: 30%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+ }
+ @keyframes reveal {
+  from {
+    opacity: 0%;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+#block1{
+  display: flex;
+}
+.subText{
+  width: fit-content;
+  margin: 0;
+}
+ /*
+.title {
+  color: rgb(32, 32, 108);
+  font-size: xxx-large;
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+  text-align: justify;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 10%;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 8%;
+  PADDING-LEFT: 5%;
+}
+@keyframes reveal {
+  from {
+    opacity: 0%;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.subText {
+    color: rgb(24, 24, 83);
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    display: inline-block;
+    position: absolute;
+    top: 42%;
+    left: auto;
+    right: 10%;
+}
+
+#faceIcon {
+    width: 400px;
+    height: 450px;
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    object-fit: contain;
+    padding-left: 8%;
+} */ 
