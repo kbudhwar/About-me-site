@@ -2,12 +2,12 @@
   background: linear-gradient(-45deg, #92c7c1,#79cbc0, #3b869f, #3275a1);
   animation: gradient 15s ease infinite;
   position: relative;
-  height: 100%;
   overflow: hidden;
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 60px);
   background-size: 400% 400%;
   max-width: 96%;
   margin: 2%;
+  position: absolute;
  }
  .title{
   color: white;
@@ -15,25 +15,26 @@
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   vertical-align: top;
   margin-top: 7%;
-  margin-left: 7%;;
+  margin-left: 6%;;
+  width: fit-content;
+  display: inline-block;
  }
  .faceIcon{
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
   width: 30%;
-  top: 0px;
-  right: 0px;
+  float: right;
+  margin-top: 7%;
+    margin-right: 6%;
  }
- #block1{
-   display: flex;
-  }
   .subText{
   width: fit-content;
-  margin-left: 7%;
-  color: #e06e6a;
+  margin-left: 6%;
+  color: #e58995;
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   font-size: large;
   font-weight: 600;
+  display: inline-block;
 }
 @keyframes reveal {
  from {
