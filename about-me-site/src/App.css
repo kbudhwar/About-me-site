@@ -1,5 +1,5 @@
 .pageWrap {
-  background: linear-gradient(-45deg, #92c7c1,#79cbc0, #3b869f, #3275a1);
+  background: linear-gradient(-45deg, #92c7c1, #79cbc0, #3b869f, #3275a1);
   animation: gradient 15s ease infinite;
   position: relative;
   overflow: hidden;
@@ -8,28 +8,28 @@
   max-width: 96%;
   margin: 2%;
   position: absolute;
- }
- .title{
+}
+.title {
   color: white;
   font-size: 74px;
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   vertical-align: top;
-  margin-top: 7%;
-  margin-left: 6%;;
+  margin-top: 10%;
+  margin-left: 10%;
   width: fit-content;
   display: inline-block;
- }
- .faceIcon{
+}
+.faceIcon {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
   width: 30%;
   float: right;
-  margin-top: 7%;
-    margin-right: 6%;
- }
-  .subText{
+  margin-top: 6%;
+  margin-right: 10%;
+}
+.subText {
   width: fit-content;
-  margin-left: 6%;
+  margin-left: 10%;
   color: #e58995;
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   font-size: large;
@@ -37,26 +37,26 @@
   display: inline-block;
 }
 @keyframes reveal {
- from {
-   opacity: 0%;
-   transform: translateY(8px);
- }
- to {
-   opacity: 100%;
- }
+  from {
+    opacity: 0%;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 100%;
+  }
 }
 @keyframes gradient {
- 0% {
-   background-position: 0% 50%;
- }
- 50% {
-   background-position: 100% 50%;
- }
- 100% {
-   background-position: 0% 50%;
- }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
- /*
+/*
 .title {
   color: rgb(32, 32, 108);
   font-size: xxx-large;
@@ -95,4 +95,4 @@
     animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
     object-fit: contain;
     padding-left: 8%;
-} */ 
+} */
