@@ -1,41 +1,76 @@
 .pageWrap {
-  background: linear-gradient(-45deg, #92c7c1, #79cbc0, #3b869f, #3275a1);
+  background: linear-gradient(-45deg,#6ecddc, #5cc8c6,#38807e);
   animation: gradient 15s ease infinite;
   position: relative;
-  overflow: hidden;
   min-height: calc(100vh - 60px);
   background-size: 400% 400%;
   max-width: 96%;
   margin: 2%;
-  position: absolute;
+  position: fixed;
+  width: -webkit-fill-available;
 }
-.title {
+.text{
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+  width: fit-content;
+  padding: 2px;
+}
+#title {
+  position: absolute;
   color: white;
+  line-height: 84px;
   font-size: 74px;
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   vertical-align: top;
-  margin-top: 10%;
-  margin-left: 10%;
-  width: fit-content;
+  top: 30%;
+  left: 10%;
   display: inline-block;
 }
-.faceIcon {
+#subText {
+  position: absolute;
+  left: 10.45%;
+  color: white;
+  font-size: large;
+  top: 55%;
+  font-weight: 500;
+}
+#background-stripes {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
-  width: 30%;
   float: right;
-  margin-top: 6%;
-  margin-right: 10%;
+  width: 40%;
+  top: 32%;
+  right: 10%;
+  position: absolute;
 }
-.subText {
-  width: fit-content;
-  margin-left: 10%;
-  color: #e58995;
+#menu-icon{
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  font-size: large;
-  font-weight: 600;
-  display: inline-block;
+  object-fit: contain;
+  width: 4.3%;
+  position: fixed;
+  top: 9%;
+  left: 6%;
 }
+#menu-bar{
+  position: fixed;
+  border-left: 2px solid rgb(250, 230, 98);
+  height: 28px;
+  left: 12%;
+  top: 11%;
+  color: rgb(250, 230, 98);
+  padding-left: 15px;
+  font-size: large;
+}
+#scroll{
+  position: absolute;
+  border-left: 2px solid rgb(250, 230, 98);
+  height: 120px;
+  left: 20%;
+  color: rgb(250, 230, 98);
+  padding-left: 15px;
+  font-size: large;
+  bottom: -50%;
+}
+/*KEYFRAMES */
 @keyframes reveal {
   from {
     opacity: 0%;
@@ -56,43 +91,3 @@
     background-position: 0% 50%;
   }
 }
-/*
-.title {
-  color: rgb(32, 32, 108);
-  font-size: xxx-large;
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  text-align: justify;
-  width: -moz-fit-content;
-  width: fit-content;
-  left: 10%;
-  vertical-align: top;
-  display: inline-block;
-  padding-top: 8%;
-  PADDING-LEFT: 5%;
-}
-@keyframes reveal {
-  from {
-    opacity: 0%;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 100%;
-  }
-}
-.subText {
-    color: rgb(24, 24, 83);
-    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-    display: inline-block;
-    position: absolute;
-    top: 42%;
-    left: auto;
-    right: 10%;
-}
-
-#faceIcon {
-    width: 400px;
-    height: 450px;
-    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-    object-fit: contain;
-    padding-left: 8%;
-} */
