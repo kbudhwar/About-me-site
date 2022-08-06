@@ -1,5 +1,5 @@
 .pageWrap {
-  background: linear-gradient(-45deg,#6ecddc, #5cc8c6,#38807e);
+  background: linear-gradient(-45deg, #6ecddc, #5cc8c6, #38807e);
   animation: gradient 15s ease infinite;
   position: relative;
   min-height: calc(100vh - 60px);
@@ -8,29 +8,31 @@
   margin: 2%;
   position: fixed;
   width: -webkit-fill-available;
+  overflow-y: scroll;
 }
-.text{
+
+#title {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   width: fit-content;
   padding: 2px;
-}
-#title {
   position: absolute;
   color: white;
   line-height: 84px;
   font-size: 74px;
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   vertical-align: top;
   top: 30%;
   left: 10%;
   display: inline-block;
 }
 #subText {
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+  width: fit-content;
+  padding: 2px;
   position: absolute;
   left: 10.45%;
   color: white;
   font-size: large;
-  top: 55%;
+  top: 57%;
   font-weight: 500;
 }
 #background-stripes {
@@ -42,7 +44,7 @@
   right: 10%;
   position: absolute;
 }
-#menu-icon{
+#menu-icon {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
   width: 4.3%;
@@ -50,7 +52,8 @@
   top: 9%;
   left: 6%;
 }
-#menu-bar{
+#menu-bar {
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   position: fixed;
   border-left: 2px solid rgb(250, 230, 98);
   height: 28px;
@@ -60,15 +63,53 @@
   padding-left: 15px;
   font-size: large;
 }
-#scroll{
+.scroll-text {
+  position: absolute;
+  color: rgb(250, 230, 98);
+  padding-left: 15px;
+  font-size: large;
+  bottom: 14%;
+  animation: scrollBob 1s ease infinite 0.5s, reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+
+}
+#s {
+  left: 20%;
+padding-right: 2px;  animation-delay: 1.0725s;
+}
+#c {
+  left: 21%;
+  padding-right: 2px; 
+  animation-delay: 1.145s;
+}
+#r {
+  left: 22.3%;
+  padding-right: 2px; 
+  animation-delay: 1.2175s;
+}
+#o {
+  left: 23.3%;
+  padding-right: 2px; 
+  animation-delay: 1.29s;
+}
+#l {
+  left: 24.6%;
+  padding-right: 2px; 
+  animation-delay: 1.3625s;
+}
+#l1 {
+  left: 25.6%;
+  animation-delay: 1.435s;
+}
+#scroll {
+  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   position: absolute;
   border-left: 2px solid rgb(250, 230, 98);
-  height: 120px;
+  height: 200px;
   left: 20%;
   color: rgb(250, 230, 98);
   padding-left: 15px;
   font-size: large;
-  bottom: -50%;
+  bottom: -15%;
 }
 /*KEYFRAMES */
 @keyframes reveal {
@@ -90,4 +131,44 @@
   100% {
     background-position: 0% 50%;
   }
+}
+@keyframes scrollBob {
+  0%,
+  10% {
+    transform: none;
+    opacity: 1;
+    color: rgb(222, 202, 70);
+  }
+  1%,
+  8% {
+    transform: translateY(-2px);
+    color: rgb(255, 221, 0);
+  }
+  4% {
+    transform: translateY(3px);
+    opacity: 1;
+    color:rgb(222, 202, 70);
+  }
+}
+
+#about-me-title{
+  position: absolute;
+  left: 10%;
+  bottom: -45%;
+  line-height: 84px;
+  font-size: 60px;
+  /* font-family: "Caveat", cursive; */
+  text-shadow: 1px 1px white;
+  font-weight: 900;
+  color: #ee539c;
+}
+#about-me-description{
+  position: absolute;
+  left: 10%;
+  bottom: -65%;
+  font-size: 18px;
+  color: white;
+  width: 630px;
+  white-space: pre-wrap;
+  font-family: "Poppins", sans-serif;
 }
