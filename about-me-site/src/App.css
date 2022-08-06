@@ -11,6 +11,9 @@
   overflow-y: scroll;
 }
 
+::selection{
+  background-color: pink;
+}
 #title {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   width: fit-content;
@@ -154,21 +157,80 @@ padding-right: 2px;  animation-delay: 1.0725s;
 #about-me-title{
   position: absolute;
   left: 10%;
-  bottom: -45%;
+  bottom: -43%;
   line-height: 84px;
   font-size: 60px;
   /* font-family: "Caveat", cursive; */
-  text-shadow: 1px 1px white;
   font-weight: 900;
-  color: #ee539c;
+  color: white;
+}
+#about-me-line{
+  left: 10%;
+  bottom:-45%;
+}
+hr{
+  border: 1px solid #ee539c;
+  border-radius: 5px;
+  position: absolute;
+  width: 100px;
 }
 #about-me-description{
   position: absolute;
   left: 10%;
-  bottom: -65%;
+  bottom: -69%;
   font-size: 18px;
   color: white;
   width: 630px;
   white-space: pre-wrap;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color:white;
+  background-color: #ee539c;
+}
+
+.subtitle{
+  position: absolute;
+  line-height: 84px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+#mySkills-title{
+  right: 10%;
+  bottom: -93%;
+}
+#mySkills-line{
+  bottom: -93%;
+  right:16.5%;
+}
+#mySkills-description{
+  position: absolute;
+  right: 50%;
+  bottom: -150%;
+  border-left: 3px solid rgb(250, 230, 98);
+  height: 300px;
+}
+
+#experiences-title{
+  left: 10%;
+  bottom: -163%;
+}
+#experiences-line{
+  bottom: -163%;
+  left:10%
+}
+#experiences-description{
+  
+}
+
+#projects-title{
+  right:10%;
+  bottom:-183%
+}
+#projects-line{
+  bottom: -183%;
+  right:20.5%;
 }

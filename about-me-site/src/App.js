@@ -42,11 +42,29 @@ function App() {
         L
       </span>
       <div>
-        <div id="about-me-title">About me.</div>
+        <div id="about-me-title">About me<span style={{ color: "#e4448f" }}>.</span></div>
+        <hr id="about-me-line"></hr>
         <pre id="about-me-description">
           From interative websites to scalable applications, I love working on complex problems and finding creative solutions. Feel free to talk
-          to me about women in technology, anything space related and good coffee <span style={{ color: "rgb(250, 230, 98)" , fontWeight:"600"}}>- I love meeting new people!</span>
+          to me about women in technology, anything <span><a href="https://www.flickr.com/photos/nasawebbtelescope/albums/72177720300469752">space</a></span> related and good <span><a href="https://chamberlaincoffee.com/">coffee</a></span> <span style={{ color: "rgb(250, 230, 98)" , fontWeight:"600"}}>- I love meeting new people!</span>
         </pre>
+
+        <div className="subtitle" id="mySkills-title">
+          My Skills<span style={{ color: "#e4448f" }}>.</span>
+        </div>
+        <hr id="mySkills-line"></hr>
+        <pre id="mySkills-description">
+        </pre>
+        <div className="subtitle" id="experiences-title">
+        My Experiences<span style={{ color: "#e4448f" }}>.</span>
+        </div>
+        <hr id="experiences-line"></hr>
+        <pre id="experiences-description">
+        </pre>
+        <div className="subtitle" id="projects-title">
+        My Projects<span style={{ color: "#e4448f" }}>.</span>
+        </div>
+        <hr id="projects-line"></hr>
       </div>
     </div>
   );
