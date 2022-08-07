@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FaceIcon from "./images/face-icon.png"
 
 import Intro from "./components/Intro/intro";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
@@ -20,6 +21,7 @@ function App() {
     <div>
       <div className="pageWrap"></div>
       <div id="white-top"></div>
+      <object id="face-icon" data={FaceIcon} aria-label="face icon"></object>
       <div id="white-bottom"></div>
       <Intro></Intro>
       <NavigationBar></NavigationBar>

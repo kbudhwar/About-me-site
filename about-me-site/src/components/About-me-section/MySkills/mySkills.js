@@ -10,22 +10,22 @@ function MySkills() {
 
 
   const languageData = [
-    { title: "C++", value: 18, color: "#ff5b5b" },
-    { title: "Java", value: 18, color: "#ffc75d" },
-    { title: "C", value: 18, color: "#2ed159" },
-    { title: "C#", value: 10, color: "	#91f7ff" },
-    { title: "CSS", value: 10, color: "#00b5b8" },
-    { title: "HTML", value: 10, color: "#a0cdff" },
-    { title: "JS", value: 10, color: "#bdb2ff" },
-    { title: "PHP", value: 6, color: "#ffc6ff" },
+    { title: "C++", value: 18, color: "#c780e8" },
+    { title: "Java", value: 18, color: "#9d94ff" },
+    { title: "C", value: 18, color: "#59adf6" },
+    { title: "C#", value: 10, color: "	#08cad1" },
+    { title: "CSS", value: 10, color: "#42d6a4    " },
+    { title: "HTML", value: 10, color: "#e6e05e" },
+    { title: "JS", value: 10, color: "#ffb480" },
+    { title: "PHP", value: 6, color: "#ff6961" },
   ];
   const technologiesData = [
-    { title: "Docker", value: 15, color: "#2ed159" },
-    { title: "K8s", value: 10, color: "	#91f7ff" },
-    { title: "Jenkins", value: 10, color: "#00b5b8" },
-    { title: "GCP", value: 5, color: "#a0cdff" },
-    { title: "React", value: 30, color: "#ffc75d" },
-    { title: "Git", value: 30, color: "#ff5b5b" },
+    { title: "Docker", value: 15, color: "#ffb480" },
+    { title: "K8s", value: 10, color: "	#42d6a4" },
+    { title: "Jenkins", value: 10, color: "#08cad1" },
+    { title: "GCP", value: 5, color: "#59adf6" },
+    { title: "React", value: 30, color: "#9d94ff" },
+    { title: "Git", value: 30, color: "#ff6961" },
   ];
   return (
     <div>
