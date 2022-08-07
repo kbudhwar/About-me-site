@@ -1,5 +1,6 @@
 .pageWrap {
-  background: linear-gradient(-45deg, #6ecddc, #5cc8c6, #38807e);
+  /* background: linear-gradient(-45deg, #adf4ff, #5cc8c6, #38807e); */
+  background-color: rgb(25, 16, 55);
   animation: gradient 15s ease infinite;
   min-height: calc(100vh - 60px);
   background-size: 400% 400%;
@@ -39,7 +40,7 @@
 }
 #footer {
   position: absolute;
-  bottom: -220%;
+  bottom: -250%;
   border-top: 3px solid white;
   width: 40%;
 }
