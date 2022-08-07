@@ -1,0 +1,24 @@
+#title {
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    width: fit-content;
+    padding: 2px;
+    position: absolute;
+    color: white;
+    line-height: 84px;
+    font-size: 74px;
+    vertical-align: top;
+    top: 30%;
+    left: 10%;
+    display: inline-block;
+  }
+  #subText {
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    width: fit-content;
+    padding: 2px;
+    position: absolute;
+    left: 10.45%;
+    color: white;
+    font-size: large;
+    top: 57%;
+    font-weight: 500;
+  }

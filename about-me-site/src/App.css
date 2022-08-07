@@ -1,7 +1,6 @@
 .pageWrap {
   background: linear-gradient(-45deg, #6ecddc, #5cc8c6, #38807e);
   animation: gradient 15s ease infinite;
-  position: relative;
   min-height: calc(100vh - 60px);
   background-size: 400% 400%;
   max-width: 96%;
@@ -10,33 +9,24 @@
   width: -webkit-fill-available;
   overflow-y: scroll;
 }
-
-::selection{
+#white-top {
+  border-top: 42px solid white;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 100;
+  overflow-y: scroll;
+}
+#white-bottom {
+  border-top: 33px solid white;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  z-index: 100;
+  overflow-y: scroll;
+}
+::selection {
   background-color: pink;
-}
-#title {
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  width: fit-content;
-  padding: 2px;
-  position: absolute;
-  color: white;
-  line-height: 84px;
-  font-size: 74px;
-  vertical-align: top;
-  top: 30%;
-  left: 10%;
-  display: inline-block;
-}
-#subText {
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  width: fit-content;
-  padding: 2px;
-  position: absolute;
-  left: 10.45%;
-  color: white;
-  font-size: large;
-  top: 57%;
-  font-weight: 500;
 }
 #background-stripes {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
@@ -47,72 +37,11 @@
   right: 10%;
   position: absolute;
 }
-#menu-icon {
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  object-fit: contain;
-  width: 4.3%;
-  position: fixed;
-  top: 9%;
-  left: 6%;
-}
-#menu-bar {
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  position: fixed;
-  border-left: 2px solid rgb(250, 230, 98);
-  height: 28px;
-  left: 12%;
-  top: 11%;
-  color: rgb(250, 230, 98);
-  padding-left: 15px;
-  font-size: large;
-}
-.scroll-text {
+#footer {
   position: absolute;
-  color: rgb(250, 230, 98);
-  padding-left: 15px;
-  font-size: large;
-  bottom: 14%;
-  animation: scrollBob 1s ease infinite 0.5s, reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-
-}
-#s {
-  left: 20%;
-padding-right: 2px;  animation-delay: 1.0725s;
-}
-#c {
-  left: 21%;
-  padding-right: 2px; 
-  animation-delay: 1.145s;
-}
-#r {
-  left: 22.3%;
-  padding-right: 2px; 
-  animation-delay: 1.2175s;
-}
-#o {
-  left: 23.3%;
-  padding-right: 2px; 
-  animation-delay: 1.29s;
-}
-#l {
-  left: 24.6%;
-  padding-right: 2px; 
-  animation-delay: 1.3625s;
-}
-#l1 {
-  left: 25.6%;
-  animation-delay: 1.435s;
-}
-#scroll {
-  animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
-  position: absolute;
-  border-left: 2px solid rgb(250, 230, 98);
-  height: 200px;
-  left: 20%;
-  color: rgb(250, 230, 98);
-  padding-left: 15px;
-  font-size: large;
-  bottom: -15%;
+  bottom: -220%;
+  border-top: 3px solid white;
+  width: 40%;
 }
 /*KEYFRAMES */
 @keyframes reveal {
@@ -135,102 +64,10 @@ padding-right: 2px;  animation-delay: 1.0725s;
     background-position: 0% 50%;
   }
 }
-@keyframes scrollBob {
-  0%,
-  10% {
-    transform: none;
-    opacity: 1;
-    color: rgb(222, 202, 70);
-  }
-  1%,
-  8% {
-    transform: translateY(-2px);
-    color: rgb(255, 221, 0);
-  }
-  4% {
-    transform: translateY(3px);
-    opacity: 1;
-    color:rgb(222, 202, 70);
-  }
-}
 
-#about-me-title{
-  position: absolute;
-  left: 10%;
-  bottom: -43%;
-  line-height: 84px;
-  font-size: 60px;
-  /* font-family: "Caveat", cursive; */
-  font-weight: 900;
-  color: white;
-}
-#about-me-line{
-  left: 10%;
-  bottom:-45%;
-}
-hr{
+hr {
   border: 1px solid #ee539c;
   border-radius: 5px;
   position: absolute;
   width: 100px;
-}
-#about-me-description{
-  position: absolute;
-  left: 10%;
-  bottom: -69%;
-  font-size: 18px;
-  color: white;
-  width: 630px;
-  white-space: pre-wrap;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-}
-a{
-  text-decoration: none;
-  color:white;
-  background-color: #ee539c;
-}
-
-.subtitle{
-  position: absolute;
-  line-height: 84px;
-  font-size: 40px;
-  font-weight: 900;
-  color: white;
-}
-#mySkills-title{
-  right: 10%;
-  bottom: -93%;
-}
-#mySkills-line{
-  bottom: -93%;
-  right:16.5%;
-}
-#mySkills-description{
-  position: absolute;
-  right: 50%;
-  bottom: -150%;
-  border-left: 3px solid rgb(250, 230, 98);
-  height: 300px;
-}
-
-#experiences-title{
-  left: 10%;
-  bottom: -163%;
-}
-#experiences-line{
-  bottom: -163%;
-  left:10%
-}
-#experiences-description{
-  
-}
-
-#projects-title{
-  right:10%;
-  bottom:-183%
-}
-#projects-line{
-  bottom: -183%;
-  right:20.5%;
 }

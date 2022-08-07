@@ -1,0 +1,29 @@
+#about-me-title{
+    position: absolute;
+    left: 10%;
+    bottom: -43%;
+    line-height: 84px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+  }
+  #about-me-line{
+    left: 10%;
+    bottom:-45%;
+  }
+  #about-me-description{
+    position: absolute;
+    left: 10%;
+    bottom: -69%;
+    font-size: 18px;
+    color: white;
+    width: 630px;
+    white-space: pre-wrap;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+    background-color: #ee539c;
+  }

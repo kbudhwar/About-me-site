@@ -1,0 +1,16 @@
+.subtitle {
+  position: absolute;
+  line-height: 84px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+#projects-title {
+  right: 10%;
+  bottom: -93%;
+}
+#projects-line {
+  bottom: -93%;
+  right: 20.5%;
+}

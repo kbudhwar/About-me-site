@@ -1,0 +1,22 @@
+.subtitle{
+    position: absolute;
+    line-height: 84px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+  }
+  
+  
+  #experiences-title{
+    right: 10%;
+    bottom: -193%;
+  }
+  #experiences-line{
+    bottom: -193%;
+    right:10%;
+  }
+  #experiences-description{
+    bottom: -203%;
+    position: absolute;
+    margin-bottom: 33px;
+  }

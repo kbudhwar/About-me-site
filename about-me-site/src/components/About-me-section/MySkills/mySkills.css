@@ -1,0 +1,67 @@
+.subtitle {
+  position: absolute;
+  line-height: 84px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+#mySkills-title {
+  left: 10%;
+  bottom: -133%;
+}
+#mySkills-line {
+  bottom: -133%;
+  left: 10%;
+}
+#languages {
+  position: absolute;
+  left: 15%;
+  bottom: -142%;
+  font-size: 18px;
+  color: white;
+  width: 330px;
+  white-space: pre-wrap;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: large;
+}
+#languages-graph {
+  position: absolute;
+  left: 25%;
+  bottom: -175%;
+  border-left: 3px solid rgb(250, 230, 98);
+  height: 220px;
+}
+#types-languages {
+  position: absolute;
+  bottom: -178%;
+  left: 22%;
+  white-space: initial;
+  line-height: 170%;
+  font-size: 15px;
+  color: rgb(250, 230, 98);
+  width: 30px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-align: right;
+  font-weight:bold;
+}
+
+#technologies {
+  position: absolute;
+  left: 75%;
+  bottom: -142%;
+  font-size: 18px;
+  color: white;
+  width: 330px;
+  white-space: pre-wrap;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+#technologies-graph {
+  position: absolute;
+  right: 25%;
+  bottom: -175%;
+  border-left: 3px solid rgb(250, 230, 98);
+  height: 220px;
+}

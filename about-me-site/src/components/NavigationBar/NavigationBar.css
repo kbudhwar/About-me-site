@@ -1,0 +1,25 @@
+#menu-icon {
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    object-fit: contain;
+    width: 4.3%;
+    position: fixed;
+    top: 9%;
+    left: 6%;
+    z-index: 50;
+    overflow-y: scroll;
+
+  }
+  #menu-bar {
+    animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
+    position: fixed;
+    border-left: 2px solid rgb(250, 230, 98);
+    height: 28px;
+    left: 12%;
+    top: 11%;
+    color: rgb(250, 230, 98);
+    padding-left: 15px;
+    font-size: large;
+    z-index: 50;
+    overflow-y: scroll;
+
+  }
