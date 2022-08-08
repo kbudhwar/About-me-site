@@ -1,6 +1,10 @@
 import "./about-me.css";
+import { useInView } from "react-intersection-observer";
+import RocketIcon from "../../../images/rocket.png"
 
 function AboutMe() {
+  const { ref: Rocket, inView: Visible } = useInView();
+
   return (
     <div>
       <div id="about-me-title" data-aos="fade-left" data-aos-duration="1000" >
@@ -24,6 +28,7 @@ function AboutMe() {
           - I love meeting new people!
         </span>
       </pre>
+      <div ref={Rocket} id="rocket" style={ {animation: (Visible ? "animate-rocket 8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards": "")}}><object id="rocket" data={RocketIcon} aria-label="rocket"></object></div>
     </div>
   );
 }

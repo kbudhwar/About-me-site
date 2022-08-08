@@ -1,22 +1,27 @@
-.subtitle{
-    position: absolute;
-    line-height: 84px;
-    font-size: 40px;
-    font-weight: 900;
-    color: white;
-  }
-  
-  
-  #experiences-title{
-    right: 10%;
-    bottom: -208%;
-  }
-  #experiences-line{
-    bottom: -208%;
-    right:10%;
-  }
-  #experiences-description{
-    bottom: -208%;
-    position: absolute;
-    margin-bottom: 33px;
-  }
+.subtitle {
+  position: absolute;
+  line-height: 84px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+#experiences-title {
+  right: 10%;
+  bottom: -208%;
+}
+#experiences-line {
+  bottom: -208%;
+  right: 10%;
+}
+#experiences-description {
+  bottom: -208%;
+  position: absolute;
+  margin-bottom: 33px;
+}
+#timeline {
+  position: absolute;
+  border-bottom: 3px solid white;
+  width: 100%;
+  bottom: 100%;
+}
