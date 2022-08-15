@@ -16,8 +16,8 @@ function Experiences() {
         data-aos="fade-left"
         data-aos-duration="1000"
       ></hr>
-      <pre id="experiences-description"></pre>
-      <div id="timeline"></div>
+      <pre id="experiences-description">
+      </pre>
     </div>
   );
 }

@@ -12,6 +12,7 @@ import MySkills from "./components/About-me-section/MySkills/mySkills";
 import Experiences from "./components/About-me-section/Experiences/experiences";
 import Projects from "./components/About-me-section/Projects-secton/projects";
 
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -20,8 +21,11 @@ function App() {
   return (
     <div>
       <object className="pageWrap" type="image/svg+xml" aria-label="background" data="https://cdn.svgator.com/images/2021/10/animated-background-space.svg" alt="animated space background" img="" width="200%" height="100%"></object>
-      <div className="pageWrap"></div>
       <div id="white-top"></div>
+      <div id="white-bottom"></div>
+      <div id="white-left"></div>
+      <div id="white-right"></div>
+
       <Intro></Intro>
       <NavigationBar></NavigationBar>
       <Scroll></Scroll>
