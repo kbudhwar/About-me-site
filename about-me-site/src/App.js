@@ -11,6 +11,7 @@ import AboutMe from "./components/About-me-section/About-me/about-me";
 import MySkills from "./components/About-me-section/MySkills/mySkills";
 import Experiences from "./components/About-me-section/Experiences/experiences";
 import Projects from "./components/About-me-section/Projects-secton/projects";
+import {BrowserRouter} from 'react-router-dom';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <BrowserRouter>
       <object className="pageWrap" type="image/svg+xml" aria-label="background" data="https://cdn.svgator.com/images/2021/10/animated-background-space.svg" alt="animated space background" img="" width="200%" height="100%"></object>
       <div id="white-top"></div>
       <div id="white-bottom"></div>
@@ -34,7 +35,7 @@ function App() {
       <Experiences></Experiences>
       <Projects></Projects>
       <div id="footer"></div>
-    </div>
+    </BrowserRouter>
   );
 }
 

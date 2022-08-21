@@ -8,9 +8,44 @@
 
 #projects-title {
   right: 10%;
-  bottom: -93%;
+  bottom: -85%;
 }
 #projects-line {
-  bottom: -93%;
+  bottom: -86%;
   right: 20.5%;
+}
+
+#project-1{
+  width: 350px;
+  height: 175px;
+  bottom: -115%;
+  left: 10%;
+  position: absolute;
+  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  border-radius: 25px;
+}
+
+#project-2{
+  width: 350px;
+  height: 175px;
+  bottom: -115%;
+  left: 38%;
+  position: absolute;
+  border-radius: 25px;
+  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+}
+#project-3{
+  width: 350px;
+  height: 175px;
+  bottom: -115%;
+  left: 66%;
+  position: absolute;
+  border-radius: 25px;
+  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+}
+#project-name{
+  color: white;
+  margin: 5px;
+  font-weight: 700;
+  font-size: medium;
 }

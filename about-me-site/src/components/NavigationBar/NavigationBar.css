@@ -26,35 +26,46 @@
   border: none;
   font-family: "Poppins", sans-serif;
 }
-.dropdown {
-  position: relative;
-  left: 12%;
-  top: 100%;
-  display: inline-block;
+
+
+.flyDown{
+  z-index: 50;
+  max-width: 100%;
+  min-height: 100%;
+  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  position: fixed;
+  width: -webkit-fill-available;
+  color:white;
 }
-a{
-  background-color: white;
+
+#menu-line{
+  left: 6.4%;
+    z-index: 50;
+    top: 22%;
 }
-.dropdown-content {
-  display: none;
+
+
+a.links{
   position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  background-color: white;
-}
-.dropdown-content a {
+  line-height: 84px;
+  left: 7%;
+  font-size: 40px;
+  font-weight: 900;
   color: white;
-  padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  z-index: 50;
 }
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+#About-me-title{
+  top: 27%;
 }
-
-.dropdown:hover #menu {
-  background-color: transparent;
+#Projects-title{
+  top: 39%;
+}
+#Skills-title{
+  top: 51%;
+}
+#Experiences-title{
+  top: 63%;
 }

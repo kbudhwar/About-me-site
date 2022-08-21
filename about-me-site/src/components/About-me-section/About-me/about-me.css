@@ -22,7 +22,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
   }
-  a{
+  a.link{
     text-decoration: none;
     color:white;
     background-color: #ee539c;

@@ -22,6 +22,8 @@
     "react-native-paper": "^4.12.4",
     "react-native-webview": "^11.23.0",
     "react-refresh-webpack-plugin": "^0.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
