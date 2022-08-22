@@ -26,9 +26,9 @@ function NavigationBar(){
           <div className="menu-bar" data-aos="fade-down"></div>
           <button className="menu-bar" id="menu" onClick={e=> handleClick(e, "")}>CLOSE</button>
           <hr id="menu-line" data-aos="fade-left" data-aos-duration="1000"/>
-          <Link to='#about-me-title' className="links" id="About-me-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "about-me-title")}>About Me</Link>
-          <Link to='#projects-title' className="links" id="Projects-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "projects-title")}>My Projects</Link>
-          <Link to='#mySkills-title' className="links" id="Skills-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "mySkills-title")}>My Skills</Link>
+          <Link to='#AboutMe' className="links" id="About-me-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "AboutMe")}>About Me</Link>
+          <Link to='#MyProjects' className="links" id="Projects-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "MyProjects")}>My Projects</Link>
+          <Link to='#MySkills' className="links" id="Skills-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "MySkills")}>My Skills</Link>
           <Link to='#experiences-title' className="links"href="/#" id="Experiences-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "experiences-title")}>My Experiences</Link>
         </div>
 )

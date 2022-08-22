@@ -7,6 +7,7 @@ function AboutMe() {
 
   return (
     <div>
+      <div id="AboutMe"></div>
       <div id="about-me-title" data-aos="fade-left" data-aos-duration="1000" >
         About me<span style={{ color: "#e4448f" }}>.</span>
       </div>

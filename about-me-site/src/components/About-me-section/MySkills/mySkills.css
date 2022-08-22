@@ -7,16 +7,16 @@
 }
 #mySkills-title {
   left: 10%;
-  bottom: -133%;
+  bottom: -160%;
 }
 #mySkills-line {
-  bottom: -133%;
+  bottom: -160%;
   left: 10%;
 }
 #languages {
   position: absolute;
   left: 15%;
-  bottom: -143%;
+  bottom: -170%;
   font-size: 18px;
   color: rgb(250, 230, 98);
   width: 330px;
@@ -27,14 +27,14 @@
 
 #languages-chart{
   z-index:20;
-  bottom: -190%;
+  bottom: -217%;
   left: 20%;
   position: absolute;
 }
 #technologies {
   position: absolute;
   right: 5%;
-  bottom: -143%;
+  bottom: -170%;
   font-size: 18px;
   color: rgb(250, 230, 98);
   width: 330px;
@@ -45,7 +45,14 @@
 
 #technologies-chart{
   z-index:20;
-  bottom: -190%;
+  bottom: -217%;
   right:20%;
   position: absolute;
+}
+
+#MySkills{
+  position: absolute;
+  bottom: -130%;
+  width: 630px;
+  height: 1px;
 }

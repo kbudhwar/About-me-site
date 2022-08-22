@@ -8,7 +8,6 @@ function MySkills() {
   const [hovered, setHovered] = useState(undefined);
   const [hoveredTech, setHoveredTech] = useState(undefined);
 
-
   const languageData = [
     { title: "C++", value: 18, color: "#c780e8" },
     { title: "Java", value: 18, color: "#9d94ff" },
@@ -29,6 +28,7 @@ function MySkills() {
   ];
   return (
     <div>
+      <div id="MySkills"></div>
       <div
         className="subtitle"
         id="mySkills-title"
@@ -45,7 +45,7 @@ function MySkills() {
       <pre id="languages-chart" ref={Charts}>
         <PieChart
           label={({ dataEntry }) =>
-            hovered || hovered===0?  dataEntry.value + "%" : dataEntry.title
+            hovered || hovered === 0 ? dataEntry.value + "%" : dataEntry.title
           }
           radius={PieChart.defaultProps.radius - 6}
           segmentsStyle={{ transition: "stroke .3s", cursor: "pointer" }}
@@ -80,7 +80,9 @@ function MySkills() {
       <pre id="technologies-chart" ref={Charts}>
         <PieChart
           label={({ dataEntry }) =>
-            hoveredTech || hoveredTech===0? dataEntry.value + "%" : dataEntry.title
+            hoveredTech || hoveredTech === 0
+              ? dataEntry.value + "%"
+              : dataEntry.title
           }
           radius={PieChart.defaultProps.radius - 6}
           segmentsStyle={{ transition: "stroke .3s", cursor: "pointer" }}

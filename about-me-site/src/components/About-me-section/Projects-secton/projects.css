@@ -8,44 +8,122 @@
 
 #projects-title {
   right: 10%;
-  bottom: -85%;
+  bottom: -100%;
 }
 #projects-line {
-  bottom: -86%;
+  bottom: -101%;
   right: 20.5%;
 }
 
-#project-1{
+.project-1 {
   width: 350px;
-  height: 175px;
-  bottom: -115%;
+  height: 190px;
+  bottom: -135%;
   left: 10%;
   position: absolute;
-  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  background: linear-gradient(
+    -45deg,
+    #1f1d3d,
+    #1b0c2d,
+    #1b2b44,
+    #05021b,
+    rgb(16, 16, 16)
+  );
   border-radius: 25px;
 }
 
-#project-2{
+.project-2 {
   width: 350px;
-  height: 175px;
-  bottom: -115%;
+  height: 190px;
+  bottom: -135%;
   left: 38%;
   position: absolute;
   border-radius: 25px;
-  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  background: linear-gradient(
+    -45deg,
+    #1f1d3d,
+    #1b0c2d,
+    #1b2b44,
+    #05021b,
+    rgb(16, 16, 16)
+  );
 }
-#project-3{
+.project-3 {
   width: 350px;
-  height: 175px;
-  bottom: -115%;
+  height: 190px;
+  bottom: -135%;
   left: 66%;
   position: absolute;
   border-radius: 25px;
-  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  background: linear-gradient(
+    -45deg,
+    #1f1d3d,
+    #1b0c2d,
+    #1b2b44,
+    #05021b,
+    rgb(16, 16, 16)
+  );
 }
-#project-name{
+#project-name {
   color: white;
   margin: 5px;
   font-weight: 700;
-  font-size: medium;
+}
+
+#MyProjects {
+  position: absolute;
+  bottom: -65%;
+  width: 630px;
+  height: 1px;
+}
+
+#date-project-1 {
+  position: absolute;
+  width: fit-content;
+  font-weight: 400;
+  left: 65%;
+}
+
+#date-project-2 {
+  position: absolute;
+  width: fit-content;
+  font-weight: 400;
+  left: 70%;
+}
+
+#date-project-3 {
+  position: absolute;
+  width: fit-content;
+  font-weight: 400;
+  left: 60%;
+}
+
+#projects-description{
+  position: absolute;
+  font-weight: 200;
+  top:20%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+pre.projects-technologies{
+  background-color: rgb(93, 92, 94);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  position: absolute;
+  width: fit-content;
+  top:73%;
+  border-radius: 25px;
+}
+
+#projects-technologies-1{
+  left:25%;
+}
+#projects-technologies-2{
+  left:25%;
+}
+#projects-technologies-3{
+  left:34%;
 }
