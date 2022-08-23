@@ -1,41 +1,160 @@
-import "./NavigationBar.css"
-import Icon from "../../images/code-icon.png"
-import {useState} from 'react';
-import {HashLink as Link} from 'react-router-hash-link';
-import { useNavigate } from 'react-router-dom';  
+import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 
-function NavigationBar(){
+import "./NavigationBar.css";
+import Icon from "../../images/code-icon.png";
+import Chat from "../../images/chat.png";
+import Resume from "../../images/resume.png";
+import Github from "../../images/github.png";
+import Linkidin from "../../images/linkidin.png";
+import Email from "../../images/email.png";
+
+function NavigationBar() {
   const [isShown, setIsShown] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = (e, replace) => {
-    navigate("/#"+replace);
-    setIsShown(current => !current);
-    console.log('The link was clicked.');
-  }
+    navigate("/#" + replace);
+    setIsShown((current) => !current);
+  };
 
-    return(
-        <div>
-        <div className="menu">
-        <object id="menu-icon" data={Icon} aria-label="menu icon"></object>
-          <div className="menu-bar"></div>
-        <button className="menu-bar" id="menu" onClick={e=> handleClick(e, "")}>MENU</button>
-{isShown &&(
-        <div className="flyDown" data-aos="fade-down" >
-          <object id="menu-icon" data-aos="fade-down" data={Icon} aria-label="menu icon"></object>
-          <div className="menu-bar" data-aos="fade-down"></div>
-          <button className="menu-bar" id="menu" onClick={e=> handleClick(e, "")}>CLOSE</button>
-          <hr id="menu-line" data-aos="fade-left" data-aos-duration="1000"/>
-          <Link to='#AboutMe' className="links" id="About-me-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "AboutMe")}>About Me</Link>
-          <Link to='#MyProjects' className="links" id="Projects-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "MyProjects")}>My Projects</Link>
-          <Link to='#MySkills' className="links" id="Skills-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "MySkills")}>My Skills</Link>
-          <Link to='#experiences-title' className="links"href="/#" id="Experiences-title" data-aos="fade-right" data-aos-duration="1000" onClick={e=> handleClick(e, "experiences-title")}>My Experiences</Link>
-        </div>
-)
-}
-        
-        </div>
+  return (
+    <div>
+      <div className="menu">
+        <Link to="/#">
+          <object id="menu-icon" data={Icon} aria-label="menu icon"></object>
+        </Link>
+        <div className="menu-bar"></div>
+        <button
+          className="menu-bar"
+          id="menu"
+          onClick={(e) => handleClick(e, "")}
+        >
+          MENU
+        </button>
+        <object id="chat-icon" data={Chat} aria-label="chat icon"></object>
+
+        <button id="chat" onClick={console.log("here")}>
+          <div id="chat">MESSAGE ME</div>
+          <div id="dropDown">Github</div>
+        </button>
+        {isShown && (
+          <div className="flyDown" data-aos="fade-down">
+            <div className="menu-bar"></div>
+            <button
+              className="menu-bar"
+              id="menu"
+              onClick={(e) => handleClick(e, "")}
+            >
+              CLOSE
+            </button>
+            <hr id="menu-line" data-aos="fade-left" data-aos-duration="1000" />
+            <a href="Khushi Budhwar Resume.pdf" download>
+            <object
+              id="resume-icon"
+              data={Resume}
+              aria-label="resume icon"
+            ></object>
+            </a>
+            <a href="https://github.com/kbudhwar">
+              <object
+                id="github-icon"
+                data={Github}
+                aria-label="github icon"
+              ></object>
+            </a>
+            <a
+              href="https://linkedin.com/in/khushi-budhwar"
+            >
+              <object
+                id="linkidin-icon"
+                data={Linkidin}
+                aria-label="linkidin icon"
+              ></object>
+            </a>
+            <a
+              href="mailto: khushi.budhwar@gmail.com"
+            >
+            <object
+              id="email-icon"
+              data={Email}
+              aria-label="email icon"
+            ></object>
+            </a>
+            <Link
+              to="#AboutMe"
+              className="links"
+              id="About-me-title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              onClick={(e) => handleClick(e, "AboutMe")}
+            >
+              About Me
+            </Link>
+            <span
+              id="aboutMeDescription"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              A little bit about me.
+            </span>
+            <Link
+              to="#MyProjects"
+              className="links"
+              id="Projects-title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              onClick={(e) => handleClick(e, "MyProjects")}
+            >
+              My Projects
+            </Link>
+            <span
+              id="projectsDescription"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Some cool things I have worked on.
+            </span>
+            <Link
+              to="#MySkills"
+              className="links"
+              id="Skills-title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              onClick={(e) => handleClick(e, "MySkills")}
+            >
+              My Skills
+            </Link>
+            <span
+              id="skillsDescription"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              The things I am good at.
+            </span>
+            <Link
+              to="#experiences-title"
+              className="links"
+              href="/#"
+              id="Experiences-title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              onClick={(e) => handleClick(e, "experiences-title")}
+            >
+              My Experiences
+            </Link>
+            <span
+              id="experiencessDescription"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Some of my previous jobs.
+            </span>
+          </div>
+        )}
       </div>
-    );
+    </div>
+  );
 }
 export default NavigationBar;

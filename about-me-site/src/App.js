@@ -1,8 +1,7 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import FaceIcon from "./images/face-icon.png"
 
 import Intro from "./components/Intro/intro";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
@@ -14,19 +13,30 @@ import Projects from "./components/About-me-section/Projects-secton/projects";
 import {BrowserRouter} from 'react-router-dom';
 
 
-function App() {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+class App extends React.Component{
+  authenticate(){
+    return new Promise(resolve => setTimeout(resolve, 2000)) // 2 seconds
+  }
+
+  componentDidMount(){
+    this.authenticate().then(() => {
+      const ele = document.getElementById('ipl-progress-indicator')
+      if(ele){
+        // fade out
+        ele.classList.add('available')
+        setTimeout(() => {
+          // remove from DOM
+          ele.outerHTML = ''
+        }, 2000)
+      }
+    })
+  }
+  render(){
   return (
     <BrowserRouter>
+    {AOS.init()}
+    { AOS.refresh()}
       <object className="pageWrap" type="image/svg+xml" aria-label="background" data="https://cdn.svgator.com/images/2021/10/animated-background-space.svg" alt="animated space background" img="" width="200%" height="100%"></object>
-      <div id="white-top"></div>
-      <div id="white-bottom"></div>
-      <div id="white-left"></div>
-      <div id="white-right"></div>
-
       <Intro></Intro>
       <NavigationBar></NavigationBar>
       <Scroll></Scroll>
@@ -37,6 +47,7 @@ function App() {
       <div id="footer"></div>
     </BrowserRouter>
   );
+  }
 }
 
 export default App;

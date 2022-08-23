@@ -24,8 +24,9 @@ function Projects() {
           data-aos-duration="1000"
         >
           <div id="project-name">
-            This Site<span id="date-project-1">August 2022</span>
+            My Site<span id="date-project-1">August 2022</span>
             <pre id="projects-description">An interactive space themed portfolio, filled{'\n'}with many different animations</pre>
+            
             <pre className="projects-technologies">{"  "}React.js{"  "}</pre>
             <pre className="projects-technologies" id="projects-technologies-1">{"  "}CSS{"  "}</pre>
           </div>
