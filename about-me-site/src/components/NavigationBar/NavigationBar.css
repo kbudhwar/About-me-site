@@ -1,40 +1,44 @@
 #menu-icon {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
-  width: 3%;
+  width: 40px;
   position: fixed;
   top: 8%;
-  left: 5%;
+  left: 9vh;
   z-index: 51;
   overflow-y: scroll;
 }
-#chat-icon{
+#chat-icon {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   object-fit: contain;
-  width: 3.8%;
+  width: 50px;
   position: fixed;
   top: 8%;
-  right: 13%;
+  right: 23vh;
+  margin-right: 1%;
   z-index: 50;
   overflow-y: scroll;
 }
-#chat{
+#chat {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   position: fixed;
-  top: 9.5%;
-  right: 5%;
+  border-right: 2px solid rgb(250, 230, 98);
+  height: 28px;
+  top: 9%;
+  right: 6vh;
   z-index: 50;
   color: rgb(250, 230, 98);
-  font-size: 16px;
+  font-size: large;
   border: none;
   background-color: transparent;
+  font-family: "Poppins", sans-serif;
 }
 .menu-bar {
   animation: reveal 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s backwards;
   position: fixed;
   border-left: 2px solid rgb(250, 230, 98);
   height: 28px;
-  left: 9%;
+  left: 17vh;
   top: 9%;
   color: rgb(250, 230, 98);
   padding-left: 15px;
@@ -43,127 +47,158 @@
   overflow-y: scroll;
   background-color: transparent;
 }
-#menu{
+#menu {
   border: none;
   font-family: "Poppins", sans-serif;
 }
 
-
-.flyDown{
+.flyDown {
   z-index: 50;
   max-width: 100%;
   min-height: 100%;
-  background:linear-gradient(-45deg,#1F1D3D, #1B0C2D,  #1b2b44, #05021B, rgb(16, 16, 16));
+  background: linear-gradient(
+    -45deg,
+    #1f1d3d,
+    #1b0c2d,
+    #1b2b44,
+    #05021b,
+    rgb(16, 16, 16)
+  );
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   position: fixed;
   width: -webkit-fill-available;
-  color:white;
+  color: white;
 }
 
-#menu-line{
-  left: 6.4%;
-    z-index: 50;
-    top: 22%;
+#menu-line {
+  left: 9vh;
+  z-index: 50;
+  top: 22%;
 }
 
-
-a.links{
+a.links {
   position: absolute;
   line-height: 84px;
-  left: 7%;
+  left: 10vh;
   font-size: 40px;
   font-weight: 900;
   color: white;
   text-decoration: none;
   z-index: 50;
 }
-#About-me-title{
+#About-me-title {
   top: 27%;
 }
-#Projects-title{
+#Projects-title {
   top: 39%;
 }
-#Skills-title{
+#Skills-title {
   top: 51%;
 }
-#Experiences-title{
+#Experiences-title {
   top: 63%;
 }
 
-#aboutMeDescription{
+#aboutMeDescription {
   color: white;
   z-index: 50;
   top: 32%;
   font-size: 16px;
-  left:33%;
+  left: 76vh;
   position: absolute;
 }
-#projectsDescription{
+#projectsDescription {
   color: white;
   z-index: 50;
   top: 45%;
   font-size: 16px;
-  left:33%;
+  left: 76vh;
   position: absolute;
 }
-#skillsDescription{
+#skillsDescription {
   color: white;
   z-index: 50;
   top: 56%;
   font-size: 16px;
-  left:33%;
+  left: 76vh;
   position: absolute;
 }
-#experiencessDescription{
+#experiencessDescription {
   color: white;
   z-index: 50;
   top: 68%;
   font-size: 16px;
-  left:33%;
+  left: 76vh;
   position: absolute;
 }
 
-#dropDown{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 51;
-
-}
-
-#dropDown:hover{
-  display: block;
-}
-
-#resume-icon{
+#resume-icon {
   position: absolute;
   z-index: 51;
-  width: 1.5%;
-  left:15%;
+  width: 20px;
+  left: 28vh;
   top: 21.5%;
 }
-#github-icon{
+#github-icon {
   position: absolute;
   z-index: 51;
-  width: 1.7%;
-  left:18%;
+  width: 20px;
+  left: 33vh;
   top: 21.5%;
 }
 
-#linkidin-icon{
+#linkidin-icon {
   position: absolute;
   z-index: 51;
-  width: 1.7%;
-  left:21%;
+  width: 20px;
+  left: 38vh;
   top: 21.5%;
 }
-#email-icon{
+#email-icon {
   position: absolute;
   z-index: 51;
-  width: 1.7%;
-  left:24%;
+  width: 20px;
+  left: 43vh;
   top: 21.5%;
+}
+
+@media only screen and (max-width: 350px) {
+  #chat {
+    color: transparent;
+  }
+  #chat-icon {
+    right: 2vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #experiencessDescription {
+    color: transparent;
+  }
+  #skillsDescription {
+    color: transparent;
+  }
+  #projectsDescription {
+    color: transparent;
+  }
+  #aboutMeDescription {
+    color: transparent;
+  }
+}
+@media only screen and (max-width: 351px) {
+  a.links {
+    font-size: 28px;
+  }
+  #email-icon {
+    display: none;
+  }
+  #linkidin-icon {
+    display: none;
+  }
+  #github-icon {
+    display: none;
+  }
+  #resume-icon{
+    display: none;
+  }
 }

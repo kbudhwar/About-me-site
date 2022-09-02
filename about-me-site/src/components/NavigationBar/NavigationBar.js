@@ -31,13 +31,7 @@ function NavigationBar() {
           id="menu"
           onClick={(e) => handleClick(e, "")}
         >
-          MENU
-        </button>
-        <object id="chat-icon" data={Chat} aria-label="chat icon"></object>
-
-        <button id="chat" onClick={console.log("here")}>
-          <div id="chat">MESSAGE ME</div>
-          <div id="dropDown">Github</div>
+          menu
         </button>
         {isShown && (
           <div className="flyDown" data-aos="fade-down">
@@ -47,40 +41,44 @@ function NavigationBar() {
               id="menu"
               onClick={(e) => handleClick(e, "")}
             >
-              CLOSE
+              close
             </button>
             <hr id="menu-line" data-aos="fade-left" data-aos-duration="1000" />
             <a href="Khushi Budhwar Resume.pdf" download>
-            <object
-              id="resume-icon"
-              data={Resume}
-              aria-label="resume icon"
-            ></object>
+              <object
+                id="resume-icon"
+                data={Resume}
+                aria-label="resume icon"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></object>
             </a>
             <a href="https://github.com/kbudhwar">
               <object
                 id="github-icon"
                 data={Github}
                 aria-label="github icon"
+                data-aos="fade-left"
+                data-aos-duration="1000"
               ></object>
             </a>
-            <a
-              href="https://linkedin.com/in/khushi-budhwar"
-            >
+            <a href="https://linkedin.com/in/khushi-budhwar">
               <object
                 id="linkidin-icon"
                 data={Linkidin}
                 aria-label="linkidin icon"
+                data-aos="fade-left"
+                data-aos-duration="1000"
               ></object>
             </a>
-            <a
-              href="mailto: khushi.budhwar@gmail.com"
-            >
-            <object
-              id="email-icon"
-              data={Email}
-              aria-label="email icon"
-            ></object>
+            <a href="mailto: khushi.budhwar@gmail.com">
+              <object
+                id="email-icon"
+                data={Email}
+                aria-label="email icon"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></object>
             </a>
             <Link
               to="#AboutMe"
@@ -154,6 +152,11 @@ function NavigationBar() {
           </div>
         )}
       </div>
+      <object id="chat-icon" data={Chat} aria-label="chat icon"></object>
+
+      <button id="chat">
+        message me
+      </button>
     </div>
   );
 }

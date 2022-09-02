@@ -55,9 +55,9 @@
 }
 #footer {
   position: absolute;
-  bottom: -280%;
-  border-top: 3px solid white;
-  width: 40%;
+  bottom: -330%;
+  border-top: 3px solid black;
+  width: 100%;
 }
 /*KEYFRAMES */
 @keyframes reveal {

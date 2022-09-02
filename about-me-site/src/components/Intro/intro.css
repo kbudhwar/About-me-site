@@ -7,8 +7,8 @@
     line-height: 84px;
     font-size: 74px;
     vertical-align: top;
-    top: 25%;
-    left: 10%;
+    top: 30vh;
+    left: 14vh;
     display: inline-block;
   }
   #subText {
@@ -16,9 +16,31 @@
     width: fit-content;
     padding: 2px;
     position: absolute;
-    left: 10.45%;
+    left: 14.5vh;
     color: white;
     font-size: large;
-    top: 54%;
+    top: 58vh;
     font-weight: 500;
+  }
+
+  @media only screen and (max-width: 750px) {
+    #title{
+      font-size: 10vw;
+      line-height: 12vw;
+      top: 35vh;
+
+    }
+    #subText{
+      font-size: 2.4vw;
+      top: 60vh;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    #title{
+      font-size: 10vw;
+      left: 5vh;
+    }
+    #subText{
+      display: none;
+    }
   }

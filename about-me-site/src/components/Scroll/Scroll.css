@@ -8,31 +8,31 @@
   
   }
   #s {
-    left: 20%;
+    left: 26vh;
   padding-right: 2px;  animation-delay: 1.0725s;
   }
   #c {
-    left: 21%;
+    left: 28vh;
     padding-right: 2px; 
     animation-delay: 1.145s;
   }
   #r {
-    left: 22.3%;
+    left: 30.5vh;
     padding-right: 2px; 
     animation-delay: 1.2175s;
   }
   #o {
-    left: 23.3%;
+    left: 32.5vh;
     padding-right: 2px; 
     animation-delay: 1.29s;
   }
   #l {
-    left: 24.6%;
+    left: 35vh;
     padding-right: 2px; 
     animation-delay: 1.3625s;
   }
   #l1 {
-    left: 25.6%;
+    left: 36.5vh;
     animation-delay: 1.435s;
   }
   #scroll {
@@ -40,7 +40,7 @@
     position: absolute;
     border-left: 2px solid rgb(250, 230, 98);
     height: 220px;
-    left: 20%;
+    left: 25vh;
     color: rgb(250, 230, 98);
     padding-left: 15px;
     font-size: large;
@@ -63,5 +63,29 @@
       transform: translateY(3px);
       opacity: 1;
       color:rgb(222, 202, 70);
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    #s {
+      left: 16vh;
+    }
+    #c {
+      left: 18vh;
+    }
+    #r {
+      left: 20.5vh;
+    }
+    #o {
+      left: 22.5vh;
+    }
+    #l {
+      left: 25vh;
+    }
+    #l1 {
+      left: 26.5vh;
+    }
+    #scroll{
+      left: 15vh;
     }
   }
