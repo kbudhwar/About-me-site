@@ -7,19 +7,19 @@
 }
 
 #projects-title {
-  right: 10%;
+  right: 10vh;
   bottom: -100%;
 }
 #projects-line {
   bottom: -101%;
-  right: 20.5%;
+  right: 32vh;
 }
 
 .project-1 {
   width: 350px;
   height: 190px;
   bottom: -142%;
-  left: 10%;
+  left: 10vh;
   position: absolute;
   background: linear-gradient(
     -45deg,
@@ -36,7 +36,7 @@
   width: 350px;
   height: 190px;
   bottom: -142%;
-  left: 38%;
+  left: 78vh;
   position: absolute;
   border-radius: 25px;
   background: linear-gradient(
@@ -52,7 +52,7 @@
   width: 350px;
   height: 190px;
   bottom: -142%;
-  left: 66%;
+  left: 146vh;
   position: absolute;
   border-radius: 25px;
   background: linear-gradient(
@@ -126,4 +126,8 @@ pre.projects-technologies{
 }
 #projects-technologies-3{
   left:34%;
+}
+
+@media only screen and (max-width: 1200px){
+
 }

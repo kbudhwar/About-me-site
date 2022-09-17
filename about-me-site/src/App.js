@@ -42,7 +42,6 @@ class App extends React.Component{
       <Scroll></Scroll>
       <AboutMe></AboutMe>
       <MySkills></MySkills>
-      <Experiences></Experiences>
       <Projects></Projects>
       <div id="footer"></div>
     </BrowserRouter>

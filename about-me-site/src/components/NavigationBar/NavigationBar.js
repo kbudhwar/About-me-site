@@ -9,7 +9,7 @@ import Resume from "../../images/resume.png";
 import Github from "../../images/github.png";
 import Linkidin from "../../images/linkidin.png";
 import Email from "../../images/email.png";
-
+import PDF from "../../Khushi Budhwar - External.pdf"
 function NavigationBar() {
   const [isShown, setIsShown] = useState(false);
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ function NavigationBar() {
               close
             </button>
             <hr id="menu-line" data-aos="fade-left" data-aos-duration="1000" />
-            <a href="Khushi Budhwar Resume.pdf" download>
+            <a href={PDF} download>
               <object
                 id="resume-icon"
                 data={Resume}
@@ -152,11 +152,11 @@ function NavigationBar() {
           </div>
         )}
       </div>
-      <object id="chat-icon" data={Chat} aria-label="chat icon"></object>
+      {/* <object id="chat-icon" data={Chat} aria-label="chat icon"></object>
 
       <button id="chat">
         message me
-      </button>
+      </button> */}
     </div>
   );
 }
